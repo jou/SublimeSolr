@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Solr Schema Field</string>
+	<key>scope</key>
+	<string>meta.tag.xml.solr.schema.field, meta.tag.xml.solr.schema.dynamicfield, meta.tag.xml.solr.schema.fieldtype, meta.tag.xml.solr.schema.copyfield</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>
+			s/^\s*&lt;field\b.*name="([^"]*)".*\s*\/?>/Field: $1/;
+			s/^\s*&lt;dynamicField\b.*name="([^"]*)".*\s*\/?>/Dynamic Field: $1/;
+			s/^\s*&lt;field[Tt]ype\b.*name="([^"]*)".*\s*\/?>/Type: $1/;
+			s/^\s*&lt;copyField\b\s*([^>]+")\s*\/?>/Copy Field: $1/;
+		</string>
+	</dict>
+	<key>uuid</key>
+	<string>58323439-612B-453F-A136-D206D2FCB18D</string>
+</dict>
+</plist>

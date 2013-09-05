@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Solr Config</string>
+	<key>scope</key>
+	<string>meta.tag.xml.solr.config.requesthandler, meta.tag.xml.solr.config.searchcomponent</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>
+			s/^\s*&lt;requestHandler\b.*name="([^"]*)".*\s*\/?&gt;/Request Handler: $1/;
+			s/^\s*&lt;searchComponent\b.*name="([^"]*)".*\s*\/?&gt;/Search Component: $1/;
+		</string>
+	</dict>
+	<key>uuid</key>
+	<string>850202AF-C401-463F-A6CF-79D423865FDD</string>
+</dict>
+</plist>
