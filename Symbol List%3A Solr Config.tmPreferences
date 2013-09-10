@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List: Solr Config</string>
 	<key>scope</key>
-	<string>meta.tag.xml.solr.config.requesthandler, meta.tag.xml.solr.config.searchcomponent</string>
+	<string>meta.tag.xml.solr.config.requesthandler, meta.tag.xml.solr.config.searchcomponent, meta.tag.xml.solr.config.updaterequestprocessorchain</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
@@ -14,6 +14,7 @@
 		<string>
 			s/^\s*&lt;requestHandler\b.*name="([^"]*)".*\s*\/?&gt;/Request Handler: $1/;
 			s/^\s*&lt;searchComponent\b.*name="([^"]*)".*\s*\/?&gt;/Search Component: $1/;
+			s/^\s*&lt;updateRequestProcessorChain\b.*name="([^"]*)".*\s*\/?&gt;/Update Request Processor Chain: $1/;
 		</string>
 	</dict>
 	<key>uuid</key>
